@@ -30,6 +30,7 @@ namespace WebApplication1.Controllers
         }
 
         // POST: Students/Create
+        //[ValidateInput(false)]
         [HttpPost]
         public ActionResult Create(StudentVm vm)
         {

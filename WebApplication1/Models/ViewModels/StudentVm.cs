@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace WebApplication1.Models.ViewModels
 {
@@ -10,5 +11,8 @@ namespace WebApplication1.Models.ViewModels
         public int Id { get; set; }
 
         public string Name { get; set; }
+
+        [AllowHtml]
+        public string Email { get; set; }
     }
 }
